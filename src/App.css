@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Jua&display=swap");
+
+* {
+  line-height: normal;
+  font-family: "Jua", sans-serif;
+}
+
+html,
+body,
+#root,
+#root > div {
+  height: 100%;
+}
+
+#header {
+  height: 84px;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+}
+
+#header-area {
+  width: 1024px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-end;
+  display: flex;
+  justify-content: space-between;
+}
+
+#header-cat {
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  border-top: 1px solid gainsboro;
+  border-bottom: 1px solid gainsboro;
+}
+
+#header-area-cat {
+  width: 1024px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-end;
+  display: flex;
+  justify-content: space-between;
+}
+
+#logo {
+  width: 210px;
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+#profile {
+  width: 60px;
+}
+#profile2 {
+  height: 45px;
+  width: 45px;
+  border-radius: 30px;
+}
+
+#body {
+  min-height: 100vh;
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 24px;
+}
+
+#footer {
+  height: 200px;
+  background-color: rgb(230, 230, 230);
+}
+
+.k-button {
+  font-size: x-large;
+  height: 100% !important;
+  border: none;
+}
+.k-button2 {
+  height: 100% !important;
+  font-size: x-large;
+  border: none;
+}
+.k-button3 {
+  height: 100% !important;
+  border: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#spin-spin {
+  text-align: center;
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 400px) {
+  .product-card {
+    width: 160px !important;
+  }
+  #header {
+    padding: 0 8px;
+  }
+  #body {
+    padding: 0 8px;
+  }
+  .ant-carousel {
+    margin: 0 -8px;
+  }
+}

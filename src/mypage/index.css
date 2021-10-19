@@ -1,0 +1,22 @@
+#my-location {
+  width: 400px;
+  border: 1px solid gainsboro;
+  float: left;
+}
+
+#profile-card {
+  margin-top: 20px;
+  text-align: center;
+  border: 1px solid gainsboro;
+  float: left;
+}
+
+#profile-description {
+  margin-left: 10px;
+  margin-top: 20px;
+  float: left;
+}
+
+#profile-container {
+  margin-left: 30px;
+}
