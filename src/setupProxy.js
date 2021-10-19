@@ -4,7 +4,7 @@ module.exports = function (app) {
   app.use(
     "/talk/*",
     proxy({
-      target: "http://localhost:8001",
+      target: "https://itsmine.ngrok.io",
 
       changeOrigin: true,
     })

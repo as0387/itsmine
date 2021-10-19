@@ -159,7 +159,7 @@ function ProductPage() {
 
       <div id="profile-box">
         <div>
-          <img src="/images/icons/avatar.png" />
+          <img src={process.env.PUBLIC_URL + "/images/icons/avatar.png"} />
           <span>{product.user.nickname}</span>
         </div>
         {product.user.id === userId ? (

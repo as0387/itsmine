@@ -78,7 +78,11 @@ function RegistrationForm() {
 
   return (
     <div id="register-contain">
-      <img id="logo" src="/images/icons/잇츠마인.png" width="150" />
+      <img
+        id="logo"
+        src={process.env.PUBLIC_URL + "/images/icons/잇츠마인.png"}
+        width="150"
+      />
       <Form
         id="register-container"
         {...formItemLayout}

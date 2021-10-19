@@ -36,7 +36,7 @@ function MainPage() {
         {banners.map((banner, index) => {
           return (
             <div id="banner">
-              <img src={"/banners" + banner} />
+              <img src={process.env.PUBLIC_URL + "/banners" + banner} />
             </div>
           );
         })}
@@ -69,7 +69,9 @@ function MainPage() {
                     <div className="product-seller">
                       <img
                         className="product-avatar"
-                        src="images/icons/avatar.png"
+                        src={
+                          process.env.PUBLIC_URL + "/images/icons/avatar.png"
+                        }
                       />
                       <span>{product.user.nickname}</span>
                     </div>

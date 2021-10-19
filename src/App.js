@@ -13,19 +13,7 @@ import MypageUpdatePage from "./mypageUpdate";
 import Kakaomap from "./kakaomap/kakao";
 import Myproduct from "./myproduct/index";
 import { Switch, Route, Link, useHistory } from "react-router-dom";
-import {
-  Spin,
-  Space,
-  Avatar,
-  Button,
-  Affix,
-  Menu,
-  Dropdown,
-  message,
-} from "antd";
-import { UserOutlined } from "@ant-design/icons";
-import { API_URL } from "./config/constants";
-import axios from "axios";
+import { Button, Affix, Menu, Dropdown, message } from "antd";
 import {
   CarOutlined,
   ThunderboltOutlined,
@@ -36,21 +24,16 @@ import {
   DownOutlined,
   PlusOutlined,
 } from "@ant-design/icons";
-import { useEffect, useState } from "react";
 import { login, logout } from "./store";
 import { useDispatch, useSelector } from "react-redux";
 import UpdateForm from "./updateForm";
 import ChatPage from "./chat";
 
 function App() {
-  const config = {
-    headers: { Authorization: localStorage.getItem("Authorization") },
-  };
   const history = useHistory();
   const dispatch = useDispatch();
 
   const isLogin = useSelector((store) => store.isLogin);
-  const [user, setUser] = useState(null);
 
   React.useEffect(() => {
     let jwtToken = localStorage.getItem("Authorization");
@@ -142,14 +125,23 @@ function App() {
         <div id="header">
           <div id="header-area">
             <Link to="/">
-              <img id="logo" src="/images/icons/잇츠마인.png" width="" />
+              <img
+                id="logo"
+                src={process.env.PUBLIC_URL + "/images/icons/잇츠마인.png"}
+                width=""
+              />
             </Link>
             {isLogin ? (
               <>
                 <div>
                   <Dropdown overlay={menu3} placement="bottomLeft" arrow>
                     <Button size="large" className="k-button3">
-                      <img id="profile" src="/images/icons/avatar.png" />
+                      <img
+                        id="profile"
+                        src={
+                          process.env.PUBLIC_URL + "/images/icons/avatar.png"
+                        }
+                      />
                       내정보
                     </Button>
                   </Dropdown>

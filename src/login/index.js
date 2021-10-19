@@ -79,7 +79,11 @@ function LoginPage() {
 
   return (
     <div id="login-container">
-      <img id="logo" src="/images/icons/잇츠마인.png" width="150" />
+      <img
+        id="logo"
+        src={process.env.PUBLIC_URL + "/images/icons/잇츠마인.png"}
+        width="150"
+      />
       <Form
         id="login-form"
         name="normal_login"
@@ -128,7 +132,7 @@ function LoginPage() {
           >
             로그인
           </Button>
-          회원이 아니신가요? <a href="/register"> 회원가입</a>
+          회원이 아니신가요? <a href="/itsmine/register"> 회원가입</a>
         </Form.Item>
       </Form>
       <div id="social-login">
@@ -159,7 +163,9 @@ function LoginPage() {
                     onClick();
                   }}
                 >
-                  <img src="/images/icons/kakao.png" />
+                  <img
+                    src={process.env.PUBLIC_URL + "/images/icons/kakao.png"}
+                  />
                 </a>
               );
             }}
