@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/itsmine/static/css/main.2e69bdbc.chunk.css",
+    "main.js": "/itsmine/static/js/main.740886b2.chunk.js",
+    "main.js.map": "/itsmine/static/js/main.740886b2.chunk.js.map",
+    "runtime-main.js": "/itsmine/static/js/runtime-main.efc9a044.js",
+    "runtime-main.js.map": "/itsmine/static/js/runtime-main.efc9a044.js.map",
+    "static/css/2.c39a4898.chunk.css": "/itsmine/static/css/2.c39a4898.chunk.css",
+    "static/js/2.70689fe8.chunk.js": "/itsmine/static/js/2.70689fe8.chunk.js",
+    "static/js/2.70689fe8.chunk.js.map": "/itsmine/static/js/2.70689fe8.chunk.js.map",
+    "static/js/3.6723a625.chunk.js": "/itsmine/static/js/3.6723a625.chunk.js",
+    "static/js/3.6723a625.chunk.js.map": "/itsmine/static/js/3.6723a625.chunk.js.map",
+    "index.html": "/itsmine/index.html",
+    "static/css/2.c39a4898.chunk.css.map": "/itsmine/static/css/2.c39a4898.chunk.css.map",
+    "static/css/main.2e69bdbc.chunk.css.map": "/itsmine/static/css/main.2e69bdbc.chunk.css.map",
+    "static/js/2.70689fe8.chunk.js.LICENSE.txt": "/itsmine/static/js/2.70689fe8.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.efc9a044.js",
+    "static/css/2.c39a4898.chunk.css",
+    "static/js/2.70689fe8.chunk.js",
+    "static/css/main.2e69bdbc.chunk.css",
+    "static/js/main.740886b2.chunk.js"
+  ]
+}
